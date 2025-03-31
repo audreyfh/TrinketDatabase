@@ -1,3 +1,4 @@
+import {Outlet, Link} from "react-router-dom";
 import "./css/Header.css";
 function Header(){
     return(
@@ -11,12 +12,12 @@ function Header(){
                         <div></div>
                     </div>
                     <ul id="nav-items" class="columns hidden">
-                        <li><a href={process.env.PUBLIC_URL + "/"}>Home</a></li>
-                        <li><a href={process.env.PUBLIC_URL + "/About"}>About</a></li>
-                        <li><a href={process.env.PUBLIC_URL + "/Contact"}>Contact Me</a></li>
-                        <li><a href={process.env.PUBLIC_URL + "/Collections"}>Collections</a></li>
-                        <li><a href={process.env.PUBLIC_URL + "/Ranking"}>Ranking</a></li>
-                        <li><a href={process.env.PUBLIC_URL + "/Future"}>Future Trinkets</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/About">About</Link></li>
+                        <li><Link to="/Contact">Contact Me</Link></li>
+                        <li><Link to="/Collections">Collections</Link></li>
+                        <li><Link to="/Ranking">Ranking</Link></li>
+                        <li><Link to="/Future">Future Trinkets</Link></li>
                     </ul>
                 </nav>
             </header>
