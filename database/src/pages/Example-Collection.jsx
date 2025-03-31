@@ -22,8 +22,8 @@ function ExCollections() {
                     </a></div>
                 </div>
                     <div class="columns">
-                        <div class="collection"><a href="example-trinket.html"><img class = "squareimg" src="images/macaron.jpg" /></a></div>
-                        <div class="collection"><a href="example-trinket.html">
+                        <div class="collection"><a href="./Example-Trinket"><img class = "squareimg" src="images/macaron.jpg" /></a></div>
+                        <div class="collection"><a href="./Example-Trinket">
                             <h3>Mia Macaron</h3>
                             <p><strong>Year:</strong> 2024 <br />
                                 <strong>Est. Value:</strong> $0.00 <br />
@@ -37,8 +37,8 @@ function ExCollections() {
                         </a></div>
                     </div>
                     <div class="columns">
-                        <div class="collection"><a href="example-trinket.html"><img class="squareimg" src="images/candle.jpg" /></a></div>
-                        <div class="collection"><a href="example-trinket.html">
+                        <div class="collection"><a href="./Example-Trinket"><img class="squareimg" src="images/candle.jpg" /></a></div>
+                        <div class="collection"><a href="./Example-Trinket">
                             <h3>Intriguing Candle</h3>
                             <p><strong>Year:</strong> Unknown <br />
                                 <strong>Est. Value:</strong> $5.50 <br />

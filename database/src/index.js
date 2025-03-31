@@ -8,7 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Collections from './pages/Collections';
 import Ranking from './pages/Ranking';
-import FutureTrinkets from './pages/Future-Trinkets';
+import FutureTrinkets from './pages/Future';
 import ExCollections from './pages/Example-Collection';
 import ExTrinket from './pages/Example-Trinket';
 
@@ -18,13 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="collections" element={<Collections/>} />
-          <Route path="ranking" element={<Ranking/>} />
-          <Route path="future-trinkets" element={<FutureTrinkets/>} />
-          <Route path="example-collection" element={<ExCollections/>} />
-          <Route path="example-trinket" element={<ExTrinket/>} />
+          <Route path="About" element={<About />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Collections" element={<Collections/>} />
+          <Route path="Ranking" element={<Ranking/>} />
+          <Route path="Future" element={<FutureTrinkets/>} />
+          <Route path="Example-Collection" element={<ExCollections/>} />
+          <Route path="Example-Trinket" element={<ExTrinket/>} />
         </Route>
       </Routes>
     </BrowserRouter>

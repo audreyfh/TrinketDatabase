@@ -1,4 +1,4 @@
-import './css/Future-Trinkets.css'
+import './css/Future.css'
 
 function FutureTrinkets(){
     return (
