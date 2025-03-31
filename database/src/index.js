@@ -9,8 +9,8 @@ import Contact from './pages/Contact';
 import Collections from './pages/Collections';
 import Ranking from './pages/Ranking';
 import FutureTrinkets from './pages/Future';
-import ExCollections from './pages/Example-Collection';
-import ExTrinket from './pages/Example-Trinket';
+import ExCollections from './pages/ExampleCollection';
+import ExTrinket from './pages/ExampleTrinket';
 
 function App() {
   return(

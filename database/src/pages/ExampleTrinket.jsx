@@ -1,4 +1,4 @@
-import './css/Example-Trinket.css'
+import './css/ExampleTrinket.css'
 
 function ExTrinket () {
     return(
