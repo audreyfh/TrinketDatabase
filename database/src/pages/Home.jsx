@@ -9,15 +9,15 @@ function Home(){
                     <div id="main-image"><img src="images/homeimg.jpg"/></div>
                 </section>
                 <div>
-                    <section class="row1of3"><Link to="Example-Trinket">
+                    <section class="row1of3"><Link to="ExampleTrinket">
                         <img class="sub-image" src="images/candle2x1.jpg" />
                         <h3>Newest Trinket</h3>
                     </Link></section>
-                    <section class="row1of3"><Link to="Example-Trinket">
+                    <section class="row1of3"><Link to="ExampleTrinket">
                         <img class="sub-image" src="images/petrock2x1.jpg" />
                         <h3>Highest Rating</h3>
                     </Link></section>
-                    <section class="row1of3"><Link to="Example-Trinket">
+                    <section class="row1of3"><Link to="ExampleTrinket">
                         <img class="sub-image" src="images/hangyodon2x1.jpg" />
                         <h3>Random Trinket</h3>
                     </Link></section>
