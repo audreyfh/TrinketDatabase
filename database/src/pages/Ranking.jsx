@@ -1,5 +1,5 @@
 import './css/Ranking.css'
-
+import {Outlet, Link} from "react-router-dom";
 function Ranking(){
     return (
         <div id="content">
