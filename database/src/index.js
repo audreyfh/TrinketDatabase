@@ -23,8 +23,8 @@ function App() {
           <Route path="Collections" element={<Collections/>} />
           <Route path="Ranking" element={<Ranking/>} />
           <Route path="Future" element={<FutureTrinkets/>} />
-          <Route path="Example-Collection" element={<ExCollections/>} />
-          <Route path="Example-Trinket" element={<ExTrinket/>} />
+          <Route path="ExampleCollection" element={<ExCollections/>} />
+          <Route path="ExampleTrinket" element={<ExTrinket/>} />
         </Route>
       </Routes>
     </BrowserRouter>
