@@ -8,8 +8,8 @@ function ExCollections() {
                 <h1>Example Collection</h1>
                 <h4>Click on any trinket to learn more about it!</h4>
                 <div class="columns">
-                    <div class="collection"><Link to="./ExampleTrinket"><img class="squareimg" src="images/petrock.jpg" /></Link></div>
-                    <div class="collection"><Link to="./ExampleTrinket">
+                    <div class="collection"><Link to="../ExampleTrinket"><img class="squareimg" src="images/petrock.jpg" /></Link></div>
+                    <div class="collection"><Link to="../ExampleTrinket">
                         <h3>Pet Rock</h3>
                         <p><strong>Year:</strong> 2025 <br />
                             <strong>Est. Value:</strong> Priceless <br />
@@ -23,8 +23,8 @@ function ExCollections() {
                     </Link></div>
                 </div>
                     <div class="columns">
-                        <div class="collection"><Link to="./ExampleTrinket"><img class = "squareimg" src="images/macaron.jpg" /></Link></div>
-                        <div class="collection"><Link to="./ExampleTrinket">
+                        <div class="collection"><Link to="../ExampleTrinket"><img class = "squareimg" src="images/macaron.jpg" /></Link></div>
+                        <div class="collection"><Link to="../ExampleTrinket">
                             <h3>Mia Macaron</h3>
                             <p><strong>Year:</strong> 2024 <br />
                                 <strong>Est. Value:</strong> $0.00 <br />
@@ -38,8 +38,8 @@ function ExCollections() {
                         </Link></div>
                     </div>
                     <div class="columns">
-                        <div class="collection"><Link to="./ExampleTrinket"><img class="squareimg" src="images/candle.jpg" /></Link></div>
-                        <div class="collection"><Link to="./ExampleTrinket">
+                        <div class="collection"><Link to="../ExampleTrinket"><img class="squareimg" src="images/candle.jpg" /></Link></div>
+                        <div class="collection"><Link to="../ExampleTrinket">
                             <h3>Intriguing Candle</h3>
                             <p><strong>Year:</strong> Unknown <br />
                                 <strong>Est. Value:</strong> $5.50 <br />
