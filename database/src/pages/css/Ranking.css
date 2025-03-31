@@ -1,0 +1,17 @@
+.firstplace{
+    background: var(--secondary-background-color);
+    padding:10px;
+}
+.firstplaceimg{
+    max-width:80%;
+    height:auto;
+}
+
+.ranking{
+    background:var(--secondary-background-color);
+    padding:5px;
+    
+}
+.ranking a, .firstplace a{
+    color: var(--secondary-text-color);
+}

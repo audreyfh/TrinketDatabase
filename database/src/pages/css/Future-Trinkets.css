@@ -1,0 +1,8 @@
+.collection{
+    background:var(--secondary-background-color);
+    padding:5px;
+    
+}
+.collection a{
+    color: var(--primary-text-color);
+}

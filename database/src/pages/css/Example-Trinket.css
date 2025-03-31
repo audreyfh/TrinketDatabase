@@ -1,0 +1,23 @@
+#trinketformat{
+    background: var(--secondary-background-color);
+    text-align: center;
+}
+#trinketformat p{
+    width:80%;
+    margin:auto;
+    text-align:left;
+    padding:5px;
+}
+.trinketh1{
+    padding: 10px 5px 5px 5px;
+}
+#trinketformat{
+    background: var(--secondary-background-color);
+    text-align: center;
+}
+#trinketformat p{
+    width:80%;
+    margin:auto;
+    text-align:left;
+    padding:5px;
+}

@@ -1,0 +1,5 @@
+#main-footer{
+    background:var(--main-background-color);
+    text-align: center;
+    color:var(--primary-text-color);
+  }

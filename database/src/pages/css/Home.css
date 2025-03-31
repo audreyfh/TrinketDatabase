@@ -1,0 +1,27 @@
+#main-image img{
+    height: 500px;
+    width:auto;
+}
+
+#top-section h2{
+    text-align: center;
+}
+
+.row1of3{
+    background:var(--secondary-background-color);
+    margin:25px;
+    padding:5px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.row1of3:first-child{
+    margin-top: 60px;
+}
+.row1of3 a{
+    color:var(--primary-text-color);
+}
+
+.sub-image{
+    width:200px;
+    height:auto;
+}

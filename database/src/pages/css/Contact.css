@@ -1,0 +1,11 @@
+.contact{
+    background:var(--secondary-background-color);
+    border: 2px solid var(--border-color);
+    padding:5px;
+}
+.contactform{
+    font-size: 20px;
+}
+form label{
+    display:block;
+}
