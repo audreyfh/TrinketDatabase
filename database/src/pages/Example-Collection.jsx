@@ -1,3 +1,4 @@
+import {Outlet, Link} from "react-router-dom";
 import './css/Example-Collection.css'
 
 function ExCollections() {
@@ -7,8 +8,8 @@ function ExCollections() {
                 <h1>Example Collection</h1>
                 <h4>Click on any trinket to learn more about it!</h4>
                 <div class="columns">
-                    <div class="collection"><a href="./Example-Trinket"><img class="squareimg" src="images/petrock.jpg" /></a></div>
-                    <div class="collection"><a href="./Example-Trinket">
+                    <div class="collection"><Link to="./Example-Trinket"><img class="squareimg" src="images/petrock.jpg" /></Link></div>
+                    <div class="collection"><Link to="./Example-Trinket">
                         <h3>Pet Rock</h3>
                         <p><strong>Year:</strong> 2025 <br />
                             <strong>Est. Value:</strong> Priceless <br />
@@ -19,11 +20,11 @@ function ExCollections() {
                             value.<br />
                             <strong>Rating:</strong> ★★★★★ 
                         </p>
-                    </a></div>
+                    </Link></div>
                 </div>
                     <div class="columns">
-                        <div class="collection"><a href="./Example-Trinket"><img class = "squareimg" src="images/macaron.jpg" /></a></div>
-                        <div class="collection"><a href="./Example-Trinket">
+                        <div class="collection"><Link to="./Example-Trinket"><img class = "squareimg" src="images/macaron.jpg" /></Link></div>
+                        <div class="collection"><Link to="./Example-Trinket">
                             <h3>Mia Macaron</h3>
                             <p><strong>Year:</strong> 2024 <br />
                                 <strong>Est. Value:</strong> $0.00 <br />
@@ -34,11 +35,11 @@ function ExCollections() {
                                 tourist, who just happened to be my mother.<br />
                                 <strong>Rating:</strong> ★★★★☆ 
                             </p>
-                        </a></div>
+                        </Link></div>
                     </div>
                     <div class="columns">
-                        <div class="collection"><a href="./Example-Trinket"><img class="squareimg" src="images/candle.jpg" /></a></div>
-                        <div class="collection"><a href="./Example-Trinket">
+                        <div class="collection"><Link to="./Example-Trinket"><img class="squareimg" src="images/candle.jpg" /></Link></div>
+                        <div class="collection"><Link to="./Example-Trinket">
                             <h3>Intriguing Candle</h3>
                             <p><strong>Year:</strong> Unknown <br />
                                 <strong>Est. Value:</strong> $5.50 <br />
@@ -48,7 +49,7 @@ function ExCollections() {
                                 makes me feel like an accomplished worker (and makes me wonder if I have secret candle powers).<br />
                                 <strong>Rating:</strong> ★★★★☆
                             </p>
-                        </a></div>
+                        </Link></div>
                     </div>
             </main>
         </div>
