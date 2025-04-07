@@ -5,7 +5,7 @@ function ExTrinket () {
         <div id="content">
             <main id="trinketformat">
                 <h1 class="trinketh1">Intriguing Candle (EXAMPLE)</h1>
-                <img class="fivebyfourimg" src="images/candle5x4.jpg" />
+                <img class="fivebyfourimg" src={process.env.PUBLIC_URL + "/" + "images/candle5x4.jpg"} />
                 <p><strong>Year:</strong> Unknown <br />
                     <strong>Est. Value:</strong> $5.50 <br />
                     <strong>Country of Origin:</strong> Unknown <br />
