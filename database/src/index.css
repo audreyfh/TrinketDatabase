@@ -26,7 +26,7 @@ img{
   border: 3px solid var(--border-color);
 }
 .squareimg{
-  width: 250px;
+  width: 250px !important;
   height:auto;
 }
 .fivebyfourimg{
@@ -34,19 +34,11 @@ img{
   height:auto;
 }
 
-.col1of2{
-  background:var(--secondary-background-color);
-  text-align: center;
-  padding:0 10px 10px 10px;
-  margin:10px;
-}
-.col1of2 a{
-  color: var(--primary-text-color);
-}
+
 
 @media all and (orientation: landscape){
 
-  .columns, #home-main, #podium, .firstplace{
+  #home-main, #podium, .firstplace, .columns{
       display:flex;
   }
 
@@ -59,47 +51,6 @@ img{
       margin: auto;
   }
 
-  .about, .iframe{
-      margin:60px;
-  }
-
-  .about{
-      text-align: left;
-  }
-
-  .about:nth-child(even){
-      text-align: right;
-  }
-
-  .about:nth-child(even) h3{
-      padding-right:10px;
-  }
-
-  .about:nth-child(even) p{
-      padding-right:10px;
-  }
-
-  .about-img{
-      width: 100%;
-      height:auto;
-  }
-
-  .about-img:nth-child(even){
-      padding-right: 20px;
-  }
-
-  .collection{
-      margin-bottom: 10px;
-      border-bottom:1px solid var(--secondary-background-color);
-  }
-  .collection:nth-child(odd){
-      padding:0px;
-  }
-  .collection:nth-child(even){
-      text-align: left;
-      margin-left:0px;
-      border-bottom:1px solid var(--secondary-background-color);
-  }
 
   .firstplace{
       width:70%;

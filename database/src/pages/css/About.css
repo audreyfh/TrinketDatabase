@@ -6,8 +6,8 @@
 }
 
 .about-img{
-    margin-top:20px;
-    padding:5px;
+    margin:20px;
+    padding:0;
     text-align: center;
 }
 
@@ -25,4 +25,36 @@
 iframe{
     margin:5px;
     border: 3px solid var(--border-color);
+}
+@media all and (orientation: landscape) {
+    .about{
+        display: flex;
+    }
+    .about, .iframe{
+        margin:60px;
+    }
+  
+    .about{
+        text-align: left;
+    }
+  
+    .about:nth-child(even){
+        text-align: right;
+    }
+  
+    .about:nth-child(even) h3{
+        padding-right:10px;
+    }
+  
+    .about:nth-child(even) p{
+        padding-right:10px;
+    }
+  
+    .about-img{
+        height:auto;
+    }
+  
+    .about-img:nth-child(even){
+        padding-right: 20px;
+    }
 }

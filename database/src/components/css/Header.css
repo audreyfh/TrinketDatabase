@@ -24,6 +24,10 @@
     border-bottom: 1px solid transparent;
     color:var(--primary-text-color);
 }
+#main-nav button{
+    background:none;
+    border:0px;
+}
 
 #toggle-nav div{
     margin-left:5px;
@@ -38,11 +42,11 @@
 }
 
 @media all and (orientation: landscape){
+    #main-nav button{
+        display:none;
+    }
     #main-nav li{
         flex:1;
-    }
-    #toggle-nav{
-        display:none;
     }
 
     .columns, .hidden{

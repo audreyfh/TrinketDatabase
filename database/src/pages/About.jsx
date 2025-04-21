@@ -4,8 +4,8 @@ function About(){
     return (
         <div id="content">
             <section class ="about columns">
-                <div class="about-img">
-                    <img src="images/me.jpg"/>
+                <div >
+                    <img class="about-img" src="images/me.jpg"/>
                 </div>
                 <div>
                     <h3>About Me</h3>
@@ -25,8 +25,8 @@ function About(){
                                 great enjoyment from its presence. So, come take a look at all of my favorite trinkets, and maybe you'll get enjoyment from one of them, too!
                             </p>
                         </div>
-                        <div class="about-img">
-                            <img src="images/trinketdisplay.jpg"/>
+                        <div >
+                            <img class="about-img" src="images/trinketdisplay.jpg"/>
                         </div>
                     </section>
                     <section class="iframe columns">
