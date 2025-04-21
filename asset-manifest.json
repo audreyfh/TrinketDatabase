@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/TrinketDatabase/static/css/main.d680917c.css",
-    "main.js": "/TrinketDatabase/static/js/main.4f90b6d9.js",
+    "main.css": "/TrinketDatabase/static/css/main.e96266d8.css",
+    "main.js": "/TrinketDatabase/static/js/main.6aa8e5ae.js",
     "index.html": "/TrinketDatabase/index.html",
-    "main.d680917c.css.map": "/TrinketDatabase/static/css/main.d680917c.css.map",
-    "main.4f90b6d9.js.map": "/TrinketDatabase/static/js/main.4f90b6d9.js.map"
+    "main.e96266d8.css.map": "/TrinketDatabase/static/css/main.e96266d8.css.map",
+    "main.6aa8e5ae.js.map": "/TrinketDatabase/static/js/main.6aa8e5ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.d680917c.css",
-    "static/js/main.4f90b6d9.js"
+    "static/css/main.e96266d8.css",
+    "static/js/main.6aa8e5ae.js"
   ]
 }
