@@ -4,7 +4,7 @@ import {Outlet, Link} from "react-router-dom";
 
 const PartialTrinketDisplay = (props) => {
     const classN = props.cat === "home" ? "row1of3" : "col1of2";
-    const link = props.cat === "home" ? "../ExampleTrinket" : "../ExampleCollection";
+    const link = props.cat !== "home" ? `${props.link}` : props.extraparam === "Leaderboard" ? "../Ranking" : props.extraparam === "Worst Trinkets" ? "../Collections/JunkCollection" : props.extraparam === "Favorite Trinkets" ? "../Collections/CuteCollection" : "";
     return (
             <section className={classN}><Link to={link}>
                 <img className="sub-image" src={`https://trinket-database-backend.onrender.com/${props.sub_image}`} alt={props.name}/>

@@ -6,7 +6,7 @@ const DeleteTrinket = (props) => {
 
   const deleteTrinket = async (event) => {
     const response = await fetch(
-      `https://trinket-database-backend.onrender.com/api/trinkets/${props.ranking_id}`,
+      `https://trinket-database-backend.onrender.com/api/trinkets/${props._id}`,
       {
         method: "DELETE",
       }

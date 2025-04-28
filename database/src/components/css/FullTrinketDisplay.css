@@ -1,20 +1,20 @@
 .collection img {
     width:250px;
     height:auto;
-    margin: 0;
+    margin: auto;
     padding:0;
 }
 .collection{
         text-align: center;
         background:var(--secondary-background-color);
         margin:10px;
-        padding:0;
+        padding:10px;
         color: var(--primary-text-color);
 }
 .collection a{
     text-align: center;
     background:var(--secondary-background-color);
-    margin:10px;
+    margin:0;
     padding:0;
     color: var(--primary-text-color);
 }
@@ -57,12 +57,17 @@
     border-radius: 3px;
     border: 1px solid var(--border-color);
 }
+Link{
+    padding:0;
+}
 
 @media all and (orientation: landscape){
+    .collection{
+        display: flex;
+        padding:0;
+    }
     .collection a{
         text-align: left;
-        display:flex;
-        margin-bottom: 10px;
         border-bottom:1px solid var(--secondary-background-color);
     }
     .collection :nth-child(odd){

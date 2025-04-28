@@ -42,7 +42,7 @@ img{
       display:flex;
   }
 
-  .row1of3, .col1of2, .ranking{
+  .col1of2, .ranking{
       flex:1;
   }
 

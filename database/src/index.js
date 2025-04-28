@@ -10,6 +10,14 @@ import Collections from './pages/Collections';
 import Ranking from './pages/Ranking';
 import FutureTrinkets from './pages/Future';
 import ExCollections from './pages/ExampleCollection';
+import CuteCollection from './pages/Collections/CuteCollection';
+import AnimalCollection from './pages/Collections/AnimalCollection';
+import CollectibleCollection from './pages/Collections/CollectibleCollection';
+import DollCollection from './pages/Collections/DollCollection';
+import ForeignCollection from './pages/Collections/ForeignCollection';
+import MiscCollection from './pages/Collections/Misc.Trinkets';
+import VintageCollection from './pages/Collections/VintageCollection';
+import JunkCollection from './pages/Collections/JunkCollection';
 import ExTrinket from './pages/ExampleTrinket';
 
 function App() {
@@ -24,6 +32,14 @@ function App() {
           <Route path="Ranking" element={<Ranking/>} />
           <Route path="Future" element={<FutureTrinkets/>} />
           <Route path="ExampleCollection" element={<ExCollections/>} />
+          <Route path="/Collections/CuteCollection" element={<CuteCollection />} />
+          <Route path="Collections/JunkCollection" element={<JunkCollection />} />
+          <Route path="Collections/CollectibleCollection" element={<CollectibleCollection />} />
+          <Route path="Collections/AnimalCollection" element={<AnimalCollection />} />
+          <Route path="Collections/DollCollection" element={<DollCollection />} />
+          <Route path="Collections/ForeignCollection" element={<ForeignCollection />} />
+          <Route path="Collections/Misc.Collection" element={<MiscCollection />} />
+          <Route path="Collections/VintageCollection" element={<VintageCollection />} />
           <Route path="ExampleTrinket" element={<ExTrinket/>} />
         </Route>
       </Routes>

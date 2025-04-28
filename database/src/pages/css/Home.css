@@ -1,16 +1,8 @@
 #main-image img{
-    height: 500px;
-    width:auto;
+    max-width:100%;
+    height: auto;
 }
 
 #top-section h2{
-    text-align: center;
-}
-
-.row1of3{
-    background:var(--secondary-background-color);
-    margin:25px;
-    padding:5px;
-    padding-bottom: 2px;
     text-align: center;
 }

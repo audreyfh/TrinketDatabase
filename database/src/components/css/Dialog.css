@@ -24,10 +24,6 @@
     flex: 1;
   }
 
-  #img-prev {
-    max-width: 100%;
-  }
-
   #img-upload {
     flex: 6;
   }

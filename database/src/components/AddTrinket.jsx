@@ -10,8 +10,10 @@ const AddTrinket = (props) => {
       setResult("Sending...");
 
       const formData = new FormData(event.target);
+      const categories = [props.category]; // Wrap the category in an array
+      formData.append("categories", JSON.stringify(categories)); // Send as a JSON string
 
-      const response = await fetch("http://localhost:3001/api/trinkets", {
+      const response = await fetch("https://trinket-database-backend.onrender.com/api/trinkets", {
         method: "POST",
         body: formData, 
       });
@@ -115,6 +117,8 @@ const AddTrinket = (props) => {
                     type="number"
                     id="rating"
                     name="rating"
+                    min="1"
+                    max="5"
                     value={inputs.rating || ""}
                     onChange={handleChange}
                     required

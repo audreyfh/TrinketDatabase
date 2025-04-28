@@ -7,7 +7,7 @@ const FullTrinketDisplay = (props) => {
     const rating = props.cat === "future" ? "Why I want it" : "Rating";
     const maintxt = props.cat === "new" ? `${props.name} (EXAMPLE)` : "";
     const classN = props.cat === "new" ? "trinketformat" : "collection";
-    const hideclass = props.cat === "example" ? "" : "hidebtn";
+    const hideclass = props.cat === "future" ? "hidebtn" : "";
     const [showEditDialog, setShowEditDialog] = useState(false);
     const [showDeleteDialog, setShowDeleteDialog] = useState(false);
     const [showTrinket, setShowTrinket] = useState(true);
@@ -41,11 +41,21 @@ const FullTrinketDisplay = (props) => {
     if(props.cat === "future"){
         link = props.extraparam;
     } else {
-        if (props.cat === "new"){
-            link = "";
-        }
-        else {
-            link = "../ExampleTrinket";
+        link = "";
+    }
+
+    function starRating(r) {
+        if(isNaN(Number(r))) {
+            return r;
+        } else {
+            let ratingVal = "";
+            for(let i = Number(r); i >= 1; i--){
+                ratingVal+="★";
+            }
+            while(ratingVal.length < 5){
+                ratingVal+="☆";
+            }
+            return ratingVal;
         }
     }
     return (
@@ -55,7 +65,7 @@ const FullTrinketDisplay = (props) => {
                 {showDeleteDialog ? (
                 <DeleteTrinket
                     closeDialog={closeDeleteDialog}
-                    ranking_id={trinket.ranking_id}
+                    _id={trinket._id}
                     name={trinket.name}
                     hideTrinket = {hideTrinket}
                 />) : ("")}
@@ -63,7 +73,7 @@ const FullTrinketDisplay = (props) => {
                     <EditTrinket 
                         closeDialog={closeEditDialog}
                         editTrink={editTrink}
-                        ranking_id={trinket.ranking_id}
+                        _id={trinket._id}
                         name={trinket.name}
                         year={trinket.year}
                         value={trinket.value}
@@ -75,17 +85,16 @@ const FullTrinketDisplay = (props) => {
                     /> : ""}
                 <h1>{maintxt}</h1>
                 <section className = {classN}>
-                <Link>
                     <div>
-                        <img src={imageSrc} alt={trinket.name}/>
+                        <Link to={`${link}`}><img src={imageSrc} alt={trinket.name}/></Link>
                     </div>
                     <div>
-                        <h3>{trinket.name}</h3>
+                    <Link to={`${link}`}><h3>{trinket.name}</h3></Link>
                         <p><strong>Year:</strong> {trinket.year}<br/>
                         <strong>Est. Value:</strong> {trinket.value}<br/>
                         <strong>Country of Origin:</strong> {trinket.origin} <br/>
                         <strong>Description:</strong> {trinket.description} <br/>
-                        <strong>{rating}:</strong> {trinket.rating}</p>
+                        <strong>{rating}:</strong> {starRating(trinket.rating)}</p>
                         <div>
                             <button title="Edit Trinket" id="edit-trinket" className={hideclass} onClick={openEditDialog}>
                                 &#9998;
@@ -94,8 +103,7 @@ const FullTrinketDisplay = (props) => {
                                 &#x2715;
                             </button>
                         </div>
-                    </div>
-                </Link></section>
+                    </div></section>
                 </section>
                 ) : ("")}</>
     );

@@ -40,7 +40,7 @@ const TrinketShowcase = ({category, viewMode}) => {
                 return collectionarray.some(item => t.categories[0]?.includes(item));
             }
         } else {
-            hideclass = category === "example" ? "" : "hidebtn";
+            hideclass = category === "future" ? "hidebtn" : "";
             return t.categories?.includes(category);
         }
     });
@@ -50,13 +50,13 @@ const TrinketShowcase = ({category, viewMode}) => {
                     +
             </button>
             {showAddDialog ? (
-                <AddTrinket addTrink={addTrink} closeDialog={closeAddDialog}/>
+                <AddTrinket addTrink={addTrink} closeDialog={closeAddDialog} category={category}/>
             ): ("")}
             
             <div className="trinketcolumns">
                 {filtered.map((trinket)=>(
                     <RenderMode
-                    ranking_id={trinket.ranking_id}
+                    _id={trinket._id}
                     cat = {category}
                     name={trinket.name}
                     year={trinket.year} 
@@ -68,6 +68,7 @@ const TrinketShowcase = ({category, viewMode}) => {
                     sub_image={category === "home"? trinket.image2by1 : trinket.imagesquare}
                     categories={trinket.categories}
                     label={category === "home"? trinket.extraparam : `${trinket.categories[0]} Trinkets`}
+                    link = {`../Collections/${trinket.categories[0]}Collection`}
                     extraparam={trinket.extraparam}/>
                 ))}
             </div>
